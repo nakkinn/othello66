@@ -67,7 +67,7 @@ function draw(){
     if(mode==1){
         let el = enablelist(assyuku(stone),1);
         for(let i=0; i<el.length; i++){
-            circle(el[i][1]*gridsize+gridsize*0.5, el[i][0]*gridsize+gridsize*0.5, 10);
+            circle(el[i][1]*gridsize+gridsize*0.5, el[i][0]*gridsize+gridsize*0.5, gridsize/8);
         }
     }
 
@@ -84,7 +84,7 @@ function draw(){
 
     noStroke();
     fill(0);
-    textSize(20);
+    textSize(80);
     if(mode==1) text('あなたの番です', 50, gridsize*n+30);
 
     let bcou = 0;
@@ -153,7 +153,7 @@ function taisen(){
 
 
 
-function mouseClicked(){
+function mousePressed(){
 
     if(mouseY<gridsize*n && mouseX<gridsize*n && mode==1){
 
