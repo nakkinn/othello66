@@ -286,7 +286,7 @@ function cpu2(col){
     let code = assyuku(stone);
     let y,x;
 
-    if(count_stone(code,0)+count_stone(code,1)>=n*n-10){
+    if(count_stone(code,0)+count_stone(code,1)>=n*n-12){
 
         let tmp = zentansa(code, col);
         y = tmp[0];
@@ -446,7 +446,7 @@ function tansa(codea, cola){
     let listalen;
 
 
-    for(let k=0; k<4; k++){
+    for(let k=0; k<5; k++){
 
         listalen = lista.length;
 
