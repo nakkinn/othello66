@@ -153,7 +153,7 @@ function taisen(){
 
 
 
-function mousePressed(){
+function touchStarted(){
 
     if(mouseY<gridsize*n && mouseX<gridsize*n && mode==1){
 
