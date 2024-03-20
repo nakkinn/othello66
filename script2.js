@@ -85,7 +85,7 @@ function draw(){
     noStroke();
     fill(0);
     textSize(80);
-    if(mode==1) text('あなたの番です', 50, gridsize*n+30);
+    // if(mode==1) text('あなたの番です', 50, gridsize*n+30);
 
     let bcou = 0;
     let wcou = 0;
@@ -94,8 +94,8 @@ function draw(){
         if(stone[i][j]==1)  wcou++;
     }
 
-    text('黒：'+bcou, 50, gridsize*n+60);
-    text('白：'+wcou, 130, gridsize*n+60)
+    text('黒：'+bcou, 50, gridsize*n+110);
+    text('白：'+wcou, 340, gridsize*n+110)
 
     //if(frameCount%30==0)    taisen_step();
 
