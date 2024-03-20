@@ -23,7 +23,7 @@ function setup(){
 
     createCanvas(windowWidth, windowHeight);
 
-    gridsize = Math.min(width, height)/n;
+    gridsize = Math.min(width, height)/n*0.9;
 
     stone[3][3] = 1;
     stone[2][2] = 1;
